@@ -1,32 +1,25 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
- * main - prints atext according to number
- * REtrun: ALways(success)
- *
+ * main - Entry Piont
+ * REtrun: ALways 0 (success)
  */
 
 int main(void) 
 {
-    int n, lasted;
+    int n:
+
+    int m:
 
     srand(time(0));
     n = rand () - RAND_MAX / 2;
-    lasted = n % 10;
-
-    if (lasted > 5)
-    {
-    printf("Last digit of %d is %d and is greater than 5\n", n, lasted);
-    }
-    else if (lasted == 0)
-    {
-     printf("Last digit of %d is %d and is 0\n", n, lasted);    
-    }
-    else if(lasted < 6 && lasted != 0)
-    {
-    printf("Lasted digit of %d is %d andis less than 6 and not 0\n", n, lasted);
-    }
+    m = n % 10;
+    if (m > 5)
+	    printf("Last digit of %d is %d and is greater than 5\n" ,n, m);
+    if (m == 0)
+	    printf("Last digiit of %d is %d and is 0\n", n, m);
+    if(m < 6 && m != 0)
+	    printf("Last digit of %d is %d andis less than 6 and not 0\n", n, m);
     return (0);
-
-}
+ }
